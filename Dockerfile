@@ -32,7 +32,7 @@ FROM alpine:3.7
 
 ARG username=docker
 
-MAINTAINER oleks <oleks@oleks.info>
+MAINTAINER Oleks <oleks@oleks.info>
 
 RUN adduser -D -u 1000 ${username}
 WORKDIR /home/${username}/
