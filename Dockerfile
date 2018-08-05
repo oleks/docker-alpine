@@ -34,6 +34,9 @@ ARG username=docker
 
 MAINTAINER Oleks <oleks@oleks.info>
 
+RUN apk update && \
+  apk upgrade --no-self-upgrade --available --no-cache
+
 RUN adduser -D -u 1000 ${username}
 WORKDIR /home/${username}/
 
