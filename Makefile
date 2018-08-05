@@ -32,7 +32,7 @@
 
 name:=$(shell basename $(CURDIR))
 alpine_version:=$(shell grep "FROM" Dockerfile | cut -d':' -f2)
-version:=$(alpine_version)_1
+version:=$(alpine_version)_2
 tag:=$(name):v$(version)
 
 build: Dockerfile Makefile
