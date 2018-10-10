@@ -31,8 +31,7 @@
 .PHONY: build interact
 
 name:=$(shell basename $(CURDIR))
-alpine_version:=$(shell grep "FROM" Dockerfile | cut -d':' -f2)
-version:=$(alpine_version)_3
+version:=3.8_1
 tag:=$(name):v$(version)
 
 build: Dockerfile Makefile
